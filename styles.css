@@ -6,10 +6,6 @@ body{
     font-family: 'Poppins';
 }
 
-.wrapper{
-}
-
-
 .hero{
     height: 100vh;
     display: flex;
@@ -21,7 +17,8 @@ body{
 .left-side{
      text-align: center ;
      line-height: 50px;
-     height: 75%;
+     height: 65%;
+    animation: 1s ease-out 0s 1 fade-in;
 }
 
 
@@ -48,14 +45,71 @@ body{
     cursor: pointer;
 }
 
+.button:hover .rectangle {
+    fill: #4100F2;
+}
+
+.rectangle, .arrow{
+    transition: 0.5s ease;
+}
+
+.button:hover .arrow{
+    fill: white;
+    transform: translateY(35%);
+}
+
 .welcome > h1{
     font-size: 72px;
 }
+
 
 .right-side > img {
     width:auto;
     height:885px ;
     display: flex;
     border-radius: 48px;
-    align-items:center;
+    align-items:center; 
+    animation: 1s ease-out 0s 1 img-animation;
+}
+
+
+@keyframes img-animation{
+    0%{
+        opacity: 0%;
+        transform: scale(0.8);
+    }
+    25%{
+        opacity: 25%;
+    } 
+    50%{
+        opacity: 50%;
+    } 
+    75%{
+        opacity: 75%;
+        transform: scale(1.05);
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    } 
+    50%{
+        opacity: 50%;
+    } 
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+
 }
