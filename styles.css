@@ -1,115 +1,199 @@
-body{
-
-    background-color: #fafafa;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins';
+body {
+  background-color: #fafafa;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins";
 }
 
-.hero{
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
-.left-side{
-     text-align: center ;
-     line-height: 50px;
-     height: 65%;
-    animation: 1s ease-out 0s 1 fade-in;
+.left-side {
+  text-align: center;
+  line-height: 50px;
+  height: 65%;
+  animation: 1s ease-out 0s 1 fade-in;
 }
 
-
-.welcome > p{
-    font-size:36px ;
+.welcome > p {
+  font-size: 36px;
 }
 
-.welcome > h3{
-    color:#4100F2;
-    font-weight: bold;
-    font-size: 36px;
+.welcome > h3 {
+  color: #4100f2;
+  font-weight: bold;
+  font-size: 36px;
 }
 
-
-.button-div{
-    font-size: 24px;
-    margin-top: 300px;
-    line-height: 20px;
+.button-div {
+  font-size: 24px;
+  margin-top: 300px;
+  line-height: 20px;
 }
 
-.button{
-    height: 78px;
-    width: auto;
-    cursor: pointer;
+.button {
+  height: 78px;
+  width: auto;
+  cursor: pointer;
 }
 
 .button:hover .rectangle {
-    fill: #4100F2;
+  fill: #4100f2;
 }
 
-.rectangle, .arrow{
-    transition: 0.5s ease;
+.rectangle,
+.arrow {
+  transition: 0.5s ease;
 }
 
-.button:hover .arrow{
-    fill: white;
-    transform: translateY(35%);
+.button:hover .arrow {
+  fill: white;
+  transform: translateY(35%);
 }
 
-.welcome > h1{
-    font-size: 72px;
+.welcome > h1 {
+  font-size: 72px;
 }
-
 
 .right-side > img {
-    width:auto;
-    height:885px ;
-    display: flex;
-    border-radius: 48px;
-    align-items:center; 
-    animation: 1s ease-out 0s 1 img-animation;
+  width: auto;
+  height: 885px;
+  display: flex;
+  border-radius: 48px;
+  align-items: center;
+  animation: 1s ease-out 0s 1 img-animation;
 }
 
-
-@keyframes img-animation{
-    0%{
-        opacity: 0%;
-        transform: scale(0.8);
-    }
-    25%{
-        opacity: 25%;
-    } 
-    50%{
-        opacity: 50%;
-    } 
-    75%{
-        opacity: 75%;
-        transform: scale(1.05);
-    }
-    100%{
-        opacity: 100%;
-    }
-
+@keyframes img-animation {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
-@keyframes fade-in{
-    0%{
-        opacity: 0%;
-    }
-    25%{
-        opacity: 25%;
-    } 
-    50%{
-        opacity: 50%;
-    } 
-    75%{
-        opacity: 75%;
-    }
-    100%{
-        opacity: 100%;
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 
+.second-part {
+  height: 100vh;
+  width: 1920px;
+  background-image: url("violetBg.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.project1 {
+  width: 471px;
+  height: 667px;
+  border-radius: 45px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s ease;
+}
+
+.project1:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.project2 {
+  width: 471px;
+  height: 667px;
+  border-radius: 45px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s ease;
+}
+
+.project2:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.project3 {
+  width: 471px;
+  height: 667px;
+  border-radius: 45px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.project3:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.window {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 372px;
+  height: 429px;
+  background-color: white;
+  border-radius: 45px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 24px;
+  transition: 0.3s ease;
+}
+
+.window > img {
+  max-width: 372px;
+  object-fit: cover;
+  border-radius: 45px;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  color: #4100f2;
+}
+
+.tools-used {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #7d7d7d;
+}
+
+.description {
+  font-size: 24px;
+  text-align: center;
+  margin: 6px 51px;
 }
