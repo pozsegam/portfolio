@@ -19,7 +19,13 @@
           <div class="welcome">
             <p>Hello, my name is</p>
             <h1>Mate Pozsgai</h1>
-            <h3>Front-End Developer</h3>
+            <div class="title">
+              <div class="title-wrapper">
+                <div class="title-item">Front-End Developer</div>
+                <div class="title-item">Photographer</div>
+                <div class="title-item">UI Designer</div>
+              </div>
+            </div>
           </div>
           <div class="button-div">
             <p>Check out my work!</p>
@@ -51,7 +57,7 @@
           </div>
         </div>
         <div class="right-side">
-          <img class="profile-pic" src="profilkep.JPG" alt="" />
+          <img class="profile-pic" src="profilkep_nohatter.png" alt="" />
         </div>
       </div>
       <div class="second-part">
@@ -86,6 +92,20 @@
             The classic drawing toy, made with Javascript.
           </p>
         </div>
+      </div>
+
+      <div class="contact">
+        <form action="mail.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject" />
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </div>
   </body>
