@@ -22,3 +22,13 @@ const p3 = document.querySelector(".project3");
 p3.addEventListener("click", () => {
   window.open("https://pozsegam.github.io/Etch-a-Sketch/", "_blank");
 });
+
+const cvLink = document.querySelector(".cv");
+cvLink.addEventListener("click", () => {
+  window.open("CV.pdf", "_blank");
+});
+
+const githubLink = document.querySelector(".github");
+githubLink.addEventListener("click", () => {
+  window.open("https://github.com/pozsegam", "_blank");
+});
