@@ -15,13 +15,10 @@ p1.addEventListener("click", () => {
 
 const p2 = document.querySelector(".project2");
 p2.addEventListener("click", () => {
-  window.open("https://pozsegammovies.netlify.app", "_blank");
+  window.open("https://pozsegam.github.io/reactMovie/", "_blank");
 });
 
 const p3 = document.querySelector(".project3");
 p3.addEventListener("click", () => {
-  window.open(
-    "https://htmlpreview.github.io/?https://github.com/pozsegam/Etch-a-Sketch/blob/main/index.html",
-    "_blank"
-  );
+  window.open("https://pozsegam.github.io/Etch-a-Sketch/", "_blank");
 });
