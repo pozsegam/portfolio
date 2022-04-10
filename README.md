@@ -1,4 +1,4 @@
 # portfolio
 
-https://pozsegam.netlify.app/
+https://pozsegam.github.io/portfolio/
 

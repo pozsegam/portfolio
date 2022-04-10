@@ -159,13 +159,18 @@ body {
 
 .about {
   width: 600px;
-  height: 400px;
+  height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
   border-radius: 45px;
   margin: 2em;
   margin-bottom: 120px;
   background-color: white;
+}
+
+.about > p {
+  padding: 2em;
+  line-height: 2rem;
 }
 .about-headline > h1 {
   color: #4100f2;
