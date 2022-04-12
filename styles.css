@@ -5,7 +5,7 @@ body {
 }
 
 .profile-pic {
-  height: 19rem;
+  height: 30rem;
   position: relative;
   right: 1em;
 }
@@ -133,7 +133,7 @@ body {
   transition: 0.3s ease;
 }
 .window > img {
-  max-width: 15rem;
+  width: 15rem;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -146,8 +146,14 @@ body {
 .tools-used {
   text-align: center;
   font-size: 12px;
-  margin-top: 10px;
+
   color: #7d7d7d;
+  display: inline;
+  vertical-align: middle;
+}
+
+.tools-used > p > img {
+  vertical-align: middle;
 }
 
 .third-part {
@@ -242,6 +248,7 @@ body {
       transform: translateY(-95px);
     }
   }
+
   .button-div {
     font-size: 24px;
     margin-top: 160px;
@@ -252,5 +259,20 @@ body {
     height: 78px;
     width: auto;
     cursor: pointer;
+  }
+
+  .second-part {
+    height: 70vh;
+  }
+
+  .project {
+    width: 30rem;
+    margin: 0;
+  }
+  .window {
+    width: 20rem;
+  }
+  .window > img {
+    width: 20rem;
   }
 }
