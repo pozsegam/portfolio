@@ -90,7 +90,7 @@ body {
 }
 
 .second-part {
-  background-image: url("bg.svg");
+  background-image: url("./assets/bg.svg");
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
@@ -157,31 +157,41 @@ body {
 .third-part {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem;
 }
 
 .about {
-  width: 600px;
+  width: 25rem;
   height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
   border-radius: 45px;
   margin: 2em;
-  margin-bottom: 120px;
-  background-color: white;
+  background: rgb(7, 0, 117);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 0, 117, 1) 0%,
+    rgba(40, 0, 218, 1) 0%,
+    rgba(124, 77, 255, 1) 63%
+  );
 }
 
 .about > p {
   padding: 2em;
   font-weight: 600;
   line-height: 2rem;
+  color: white;
 }
 .about-headline > h1 {
-  color: #4100f2;
+  color: white;
+  font-size: 48px;
 }
 .about-headline {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
@@ -195,10 +205,34 @@ body {
   cursor: pointer;
 }
 
+.right-part-right-side {
+  text-align: center;
+}
+.photographer {
+  width: 20rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
 @media only screen and (min-width: 1200px) {
   .hero {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .third-part {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .photographer {
+    width: 30rem;
+  }
+
+  .about-headline {
+    flex-direction: row;
+  }
+  .about {
+    width: 50rem;
   }
 
   .profile-pic {
