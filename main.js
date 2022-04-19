@@ -26,7 +26,7 @@ p3.addEventListener("click", () => {
 
 const cvLink = document.querySelector(".cv");
 cvLink.addEventListener("click", () => {
-  window.open("CV.pdf", "_blank");
+  window.open("./assets/CV.PDF", "_blank");
 });
 
 const githubLink = document.querySelector(".github");
