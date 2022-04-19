@@ -93,10 +93,22 @@ body {
   background-image: url("./assets/bg.svg");
   background-position: top;
   background-repeat: no-repeat;
+}
+
+.projects-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project-title {
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  padding-top: 1em;
+  margin: 0;
 }
 
 .project {
@@ -210,6 +222,11 @@ body {
     justify-content: space-evenly;
   }
 
+  .project-title {
+    text-align: left;
+    padding-left: 1em;
+  }
+
   .profile-pic {
     height: 35rem;
   }
@@ -220,11 +237,11 @@ body {
 }
 
 @media only screen and (min-width: 75em) {
-  .second-part {
+  .projects-container {
     flex-direction: row;
     justify-content: space-evenly;
     background-size: 100%;
-    padding: 2rem;
+    padding-bottom: 2rem;
   }
 
   .third-part {
@@ -285,7 +302,7 @@ body {
     cursor: pointer;
   }
 
-  .second-part {
+  .projects-container {
     height: 70vh;
   }
 
