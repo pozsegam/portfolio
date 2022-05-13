@@ -11,7 +11,7 @@ scrollButton.addEventListener("click", () => {
 
 const p1 = document.getElementById("no1");
 p1.addEventListener("click", () => {
-  window.open("https://pozsegam.github.io/ToDo/", "_blank");
+  window.open("https://pozsegam.github.io/Shoot-em-up/", "_blank");
 });
 
 const p2 = document.getElementById("no2");
